@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aprology Uniforms &amp; Books</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5FA;--surf:#fff;--ink:#16203A;--mut:#56617A;--line:#DCE2EE;--pri:#233C8B;--hd:#1A2C68;--gold:#F4B83A;--goldbg:#FFF4D9;--ok:#1B7F52;--okbg:#E4F5EC;--err:#B3261E;--errbg:#FDECEA;--tile:#EAEFFA;--focus:#1D4ED8;--btn:#233C8B;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1426;--surf:#172039;--ink:#EAEEF9;--mut:#A3AEC8;--line:#2A3555;--pri:#8FA8FF;--hd:#0A1130;--goldbg:#3A2F12;--ok:#4FD08F;--okbg:#10301F;--err:#FF9A92;--errbg:#3A1714;--tile:#1F2A4A;--focus:#FFD166;--btn:#4F6FE8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1426;--surf:#172039;--ink:#EAEEF9;--mut:#A3AEC8;--line:#2A3555;--pri:#8FA8FF;--hd:#0A1130;--goldbg:#3A2F12;--ok:#4FD08F;--okbg:#10301F;--err:#FF9A92;--errbg:#3A1714;--tile:#1F2A4A;--focus:#FFD166;--btn:#4F6FE8;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Figtree,system-ui,sans-serif;background-color:var(--bg)}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;margin:0;line-height:1.12;letter-spacing:-.01em}
+p{margin:0}button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.hdr{background:var(--hd);color:#fff}
+.hin{max-width:1120px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font:700 18px "Bricolage Grotesque",sans-serif;background:none;border:0;color:#fff;cursor:pointer;padding:0}
+.mark{width:34px;height:34px;border-radius:9px;background:var(--gold);color:#1A2C68;display:grid;place-items:center;font-weight:800}
+.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--gold) 0 8px,var(--pri) 8px 16px)}
+.hr{display:flex;align-items:center;gap:10px}
+.tape{border:1.5px dashed rgba(255,255,255,.55);border-radius:6px;padding:4px 12px;font-size:14px;background:rgba(255,255,255,.08)}
+.hb{background:rgba(255,255,255,.12);border:0;color:#fff;border-radius:10px;height:40px;padding:0 14px;cursor:pointer;font-weight:600;display:flex;align-items:center;gap:8px}
+.hb:hover{background:rgba(255,255,255,.2)}
+.cnt{background:var(--gold);color:#1A2C68;border-radius:99px;min-width:22px;height:22px;display:grid;place-items:center;font-size:13px;font-weight:700;padding:0 6px}
+.auth{display:grid;grid-template-columns:1.1fr 1fr;min-height:calc(100vh - 62px)}
+.hero{background:var(--hd);color:#fff;padding:56px 48px;display:flex;flex-direction:column;justify-content:space-between;gap:40px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(34px,4.4vw,54px);font-weight:800;max-width:15ch}
+.hero p{color:#C9D5F5;max-width:40ch;margin-top:16px;font-size:18px}
+.row3{display:flex;gap:14px}
+.row3 div{flex:1;max-width:150px;aspect-ratio:1.2;border-radius:16px;background:rgba(255,255,255,.1);display:grid;place-items:center;padding:10px}
+.row3 div:nth-child(2){transform:translateY(-14px);background:rgba(244,184,58,.2)}
+.side{display:grid;place-items:center;padding:32px 20px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:32px;width:100%;max-width:440px;display:flex;flex-direction:column;gap:16px;box-shadow:0 12px 32px -18px rgba(22,32,58,.35)}
+.card h2{font-size:28px}.mut{color:var(--mut)}.sm{font-size:14px}
+label{font-weight:600;font-size:14px;display:flex;flex-direction:column;gap:6px}
+input,select{height:48px;border:1.5px solid var(--line);border-radius:10px;padding:0 14px;background:var(--surf);width:100%}
+input:hover,select:hover{border-color:var(--mut)}
+.btn{height:50px;border:0;border-radius:12px;background:var(--btn);color:#fff;font-weight:700;padding:0 22px;cursor:pointer;width:100%;transition:transform .12s,filter .12s}
+.btn:hover{filter:brightness(1.1)}.btn:active{transform:scale(.98)}
+.btn.g{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.s{height:42px;font-size:15px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1.5px dashed var(--line);background:none;border-radius:8px;padding:6px 10px;font-size:13px;cursor:pointer;color:var(--mut)}
+.chip:hover{border-color:var(--pri);color:var(--ink)}
+.otp{display:flex;gap:8px}.otp input{text-align:center;padding:0;font-size:22px;font-weight:700;height:56px}
+.err{background:var(--errbg);color:var(--err);border-radius:10px;padding:12px 14px;font-weight:600;font-size:15px}
+.ok{background:var(--okbg);color:var(--ok);border-radius:10px;padding:12px 14px;font-weight:600}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 24px 64px;display:flex;flex-direction:column;gap:24px}
+.ver{border-radius:16px;background:var(--hd);color:#fff;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border:2px dashed rgba(244,184,58,.7);outline:6px solid var(--hd);outline-offset:-2px;margin:6px}
+.ver h2{font-size:24px}.ver p{color:#C9D5F5;font-size:15px}
+.ver .v{display:flex;align-items:center;gap:8px;background:rgba(79,208,143,.18);color:#7BE3AE;border-radius:99px;padding:6px 14px;font-weight:700;font-size:14px}
+.tabs{display:flex;gap:8px}
+.tab{border:1.5px solid var(--line);background:var(--surf);border-radius:99px;padding:9px 20px;font-weight:700;cursor:pointer}
+.tab[aria-pressed=true]{background:var(--btn);border-color:var(--btn);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.prod{background:var(--surf);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.tile{background:var(--tile);height:150px;display:grid;place-items:center}.tile svg{width:130px;height:108px}
+.pb{padding:18px;display:flex;flex-direction:column;gap:12px;flex:1}
+.pb h3{font-size:20px}.price{font:700 20px "Bricolage Grotesque",sans-serif}.pb .btn{margin-top:auto}
+.two{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:start}
+.box{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.box h3{font-size:20px}
+.line{display:grid;grid-template-columns:60px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.line:first-of-type{border-top:0}
+.line .t{background:var(--tile);border-radius:10px;height:52px;display:grid;place-items:center}.line .t svg{width:42px;height:36px}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:10px;margin-top:6px}
+.qty button{width:34px;height:34px;border:0;background:none;cursor:pointer;font-size:18px}
+.qty span{min-width:26px;text-align:center;font-weight:700}
+.link{background:none;border:0;color:var(--pri);font-weight:600;cursor:pointer;padding:0;text-decoration:underline}
+.opt{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;font-weight:500}
+.opt:has(input:checked){border-color:var(--pri);background:var(--tile)}
+.opt input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--btn)}
+.opt b{display:block}
+.r{display:flex;justify-content:space-between;gap:12px}.tot{font:700 22px "Bricolage Grotesque",sans-serif}
+.done{text-align:center;align-items:center}
+.done svg.ck{width:72px;height:72px;stroke:var(--ok)}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:12px;font-weight:600;opacity:0;pointer-events:none;transition:.25s;z-index:20;max-width:90vw}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:no-preference){.hero .row3 div{animation:rise .7s both}.hero .row3 div:nth-child(2){animation-delay:.12s}.hero .row3 div:nth-child(3){animation-delay:.24s}@keyframes rise{from{opacity:0;transform:translateY(24px)}}svg.ck circle,svg.ck path{stroke-dasharray:80;animation:draw .8s ease-out both}@keyframes draw{from{stroke-dashoffset:80}}}
+@media(max-width:860px){.auth{grid-template-columns:1fr}.hero{padding:32px 24px;gap:24px}.row3{display:none}.two{grid-template-columns:1fr}.tape{display:none}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=s=>document.querySelector(s),app=$('#app');
+const inr=n=>'₹'+n.toLocaleString('en-IN');
+const SCH={sun:{n:'Sunrise International School',loc:'Baner, Pune',c:'#233C8B',sh:'#8FB4E8',k:1},
+green:{n:'Greenfield Public School',loc:'Hinjewadi, Pune',c:'#1F6B4E',sh:'#9AD6B8',k:1.15}};
+const DB={MCB1001:{name:'Aarav Patil',cls:'6',sec:'B',g:'M',school:'sun',ph:'98•••••821',on:1},
+MCB2002:{name:'Ananya Kulkarni',cls:'9',sec:'A',g:'F',school:'green',ph:'97•••••406',on:1},
+MCB3003:{name:'Inactive student',cls:'8',sec:'C',g:'M',school:'sun',ph:'',on:0}};
+const S={stu:null,pend:null,cart:[],tab:'u',orders:[],view:'login',timer:null,last:null,del:'collect',pay:'UPI'};
+const ic=(t,c)=>({
+shirt:`<path d="M30 14l15-7q15 14 30 0l15 7 18 24-14 8-6-8v54H32V38l-6 8-14-8z" fill="${c}"/><path d="M45 7l15 18 15-18M60 25v67" stroke="#fff" stroke-opacity=".6" stroke-width="2" fill="none"/>`,
+bottom:`<path d="M34 8h52l6 84H66L60 38 54 92H28z" fill="${c}"/><path d="M34 18h52" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>`,
+tie:`<path d="M53 8h14l3 14-7 8 9 56-12 10-12-10 9-56-7-8z" fill="${c}"/><path d="M52 50l16-10M50 66l20-12" stroke="#F4B83A" stroke-width="4"/><rect x="82" y="44" width="34" height="9" rx="2" fill="#2b2b2b"/><rect x="96" y="42" width="9" height="13" rx="2" fill="none" stroke="#F4B83A" stroke-width="2"/>`,
+blazer:`<path d="M32 12l14-5 14 20 14-20 14 5 18 26-14 8-6-8v54H32V38l-6 8-14-8z" fill="${c}"/><path d="M46 7l14 55 14-55M60 62v30" stroke="#fff" stroke-opacity=".55" stroke-width="2" fill="none"/><circle cx="64" cy="70" r="2.5" fill="#F4B83A"/><circle cx="64" cy="82" r="2.5" fill="#F4B83A"/>`,
+books:`<rect x="16" y="64" width="88" height="18" rx="3" fill="${c}"/><rect x="24" y="44" width="76" height="18" rx="3" fill="${c}" opacity=".78"/><rect x="14" y="24" width="80" height="18" rx="3" fill="${c}" opacity=".56"/><path d="M22 73h60M30 53h50M22 33h54" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>`,
+note:`<rect x="30" y="10" width="60" height="80" rx="6" fill="${c}"/><rect x="42" y="26" width="38" height="20" rx="3" fill="#fff" fill-opacity=".85"/><path d="M42 62h38M42 72h26" stroke="#fff" stroke-opacity=".6" stroke-width="2"/><g fill="#F4B83A"><circle cx="30" cy="22" r="3"/><circle cx="30" cy="38" r="3"/><circle cx="30" cy="54" r="3"/><circle cx="30" cy="70" r="3"/></g>`
+}[t]);
+const svg=(t,c)=>`<svg viewBox="0 0 120 100" aria-hidden="true">${ic(t,c)}</svg>`;
+function items(){const s=SCH[S.stu.school],c=+S.stu.cls,p=b=>Math.round(b*s.k/10)*10,g=S.stu.g==='F';
+return[
+{id:'sh',t:'u',n:'Shirt',d:'Cotton, with school monogram',i:'shirt',col:s.sh,p:p(450)},
+{id:'bt',t:'u',n:g?'Skirt':'Trousers',d:g?'Pleated, knee length':'Elastic back, easy fit',i:'bottom',col:'#3A4256',p:p(620)},
+{id:'tb',t:'u',n:'Tie and belt',d:'School-stripe tie with buckle belt',i:'tie',col:s.c,p:p(280)},
+{id:'bl',t:'u',n:'Blazer',d:'Lined, with school crest',i:'blazer',col:s.c,p:p(1850)},
+{id:'tx',t:'b',n:`Class ${c} textbook set`,d:'Set of 7 books, all subjects',i:'books',col:s.c,p:p(1800+c*100)},
+{id:'nb',t:'b',n:'Notebook set',d:'Pack of 12, ruled and plain',i:'note',col:s.c,p:p(540)}];}
+const SZ=['24','26','28','30','32','34'];
+const cnt=()=>S.cart.reduce((a,l)=>a+l.q,0),tot=()=>S.cart.reduce((a,l)=>a+l.q*l.p,0);
+function hdr(){const u=S.stu;return`<header class="hdr"><div class="hin"><button class="brand" data-a="home" aria-label="Aprology Uniforms and Books home"><span class="mark">A</span>Aprology Uniforms &amp; Books</button>${u?`<div class="hr"><span class="tape">${u.name} · Class ${u.cls}${u.sec}</span><button class="hb" data-a="orders">My orders</button><button class="hb" data-a="cart" aria-label="Cart, ${cnt()} items">Cart <span class="cnt">${cnt()}</span></button><button class="hb" data-a="out">Sign out</button></div>`:''}</div><div class="stripe"></div></header>`}
+const V={
+login(){return`<main class="auth"><section class="hero"><div><h1>Your school’s uniforms and books, sized and ready.</h1><p>Sign in with your student ID. You’ll see only what your school and class need, and your order goes straight to your school.</p></div><div class="row3" aria-hidden="true"><div>${svg('shirt','#8FB4E8')}</div><div>${svg('blazer','#F4B83A')}</div><div>${svg('books','#C9D5F5')}</div></div></section>
+<section class="side"><div class="card"><h2>Student login</h2><p class="mut">Enter your student ID. We’ll send a one-time password to the mobile number registered with your school.</p><label>Student ID<input id="sid" placeholder="For example, MCB1001" autocomplete="off" autocapitalize="characters"></label><button class="btn" data-a="send">Send OTP</button><div><p class="sm mut" style="margin-bottom:8px">Prototype demo students</p><div class="chips"><button class="chip" data-a="demo" data-id="MCB1001">MCB1001 · Sunrise</button><button class="chip" data-a="demo" data-id="MCB2002">MCB2002 · Greenfield</button><button class="chip" data-a="demo" data-id="MCB3003">MCB3003 · Inactive</button></div></div></div></section></main>`},
+otp(){return`<main class="auth"><section class="hero"><div><h1>One quick check, then your catalog.</h1><p>We confirm your school and class so you only see the right sizes, books and prices.</p></div></section><section class="side"><div class="card"><p class="sm mut">Step 2 of 2</p><h2>Verify your OTP</h2><p class="mut">Enter the 6-digit code sent to your registered mobile ${S.pend.ph}.</p><div class="otp" id="otp">${[1,2,3,4,5,6].map(n=>`<input inputmode="numeric" maxlength="1" aria-label="Digit ${n}" autocomplete="one-time-code">`).join('')}</div><div id="oerr" role="alert"></div><button class="btn" data-a="verify">Verify and continue</button><p class="sm mut">Didn’t get it? <span id="rs"></span></p><p class="sm mut">Prototype code: 123456</p></div></section></main>`},
+failed(){return`<main class="auth"><section class="hero"><div><h1>We couldn’t match that student ID.</h1><p>Your school office can check your record and fix it in minutes.</p></div></section><section class="side"><div class="card"><div class="err">We could not verify this student ID</div><p class="mut">The ID wasn’t found, or the student is marked inactive in the school records. No catalog is shown until the student is verified.</p><button class="btn" data-a="retry">Try again</button><button class="btn g" data-a="retry">Contact your school office</button></div></section></main>`},
+catalog(){const u=S.stu,s=SCH[u.school],list=items().filter(x=>x.t===S.tab),idx=Math.min(5,Math.floor((+u.cls-1)/2));
+const n=t=>items().filter(x=>x.t===t).length;
+return`<div class="wrap"><section class="ver"><div><h2>${s.n}</h2><p>${s.loc} · Class ${u.cls} · Section ${u.sec}</p></div><span class="v">✓ Verified student</span></section>
+<div class="tabs" role="group" aria-label="Catalog"><button class="tab" data-a="tab" data-t="u" aria-pressed="${S.tab==='u'}">Uniforms (${n('u')})</button><button class="tab" data-a="tab" data-t="b" aria-pressed="${S.tab==='b'}">Books (${n('b')})</button></div>
+<div class="grid">${list.map(x=>`<article class="prod"><div class="tile">${svg(x.i,x.col)}</div><div class="pb"><div><h3>${x.n}</h3><p class="sm mut">${x.d}</p></div><div class="price">${inr(x.p)}</div>${x.t==='u'?`<label>Size (chest, inches)<select id="z-${x.id}">${SZ.map((z,i)=>`<option${i===idx?' selected':''}>${z}</option>`).join('')}</select></label>`:''}<button class="btn s" data-a="add" data-id="${x.id}">Add to cart</button></div></article>`).join('')}</div></div>`},
+cart(){const s=SCH[S.stu.school];
+if(!S.cart.length)return`<div class="wrap"><div class="box done"><h2>Your cart is empty</h2><p class="mut">Pick the uniforms and books your child needs.</p><button class="btn" style="max-width:260px" data-a="shop">Browse the catalog</button></div></div>`;
+return`<div class="wrap"><h2 style="font-size:32px">Your cart</h2><div class="two"><div style="display:flex;flex-direction:column;gap:20px">
+<section class="box">${S.cart.map((l,i)=>`<div class="line"><div class="t">${svg(l.i,l.col)}</div><div><b>${l.n}</b><p class="sm mut">${l.z?'Size '+l.z+' · ':''}${inr(l.p)} each</p><div class="qty"><button data-a="dec" data-i="${i}" aria-label="Fewer">−</button><span>${l.q}</span><button data-a="inc" data-i="${i}" aria-label="More">+</button></div></div><div style="text-align:right"><b>${inr(l.p*l.q)}</b><br><button class="link sm" data-a="rm" data-i="${i}">Remove</button></div></div>`).join('')}</section>
+<section class="box"><h3>Delivery</h3><label class="opt"><input type="radio" name="d" value="collect" ${S.del==='collect'?'checked':''}><span><b>Collect at school office</b><span class="sm mut">${s.n}, ${s.loc}</span></span></label><label class="opt"><input type="radio" name="d" value="class" ${S.del==='class'?'checked':''}><span><b>Send to class via school</b><span class="sm mut">Handed over in class, no charge</span></span></label><label>Parent / guardian phone<input id="ph" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" value="${S.ph||''}"></label><div id="perr" role="alert"></div></section>
+<section class="box"><h3>Payment</h3>${['UPI','Card','Pay at school office'].map(m=>`<label class="opt"><input type="radio" name="p" value="${m}" ${S.pay===m?'checked':''}><span><b>${m}</b></span></label>`).join('')}</section></div>
+<aside class="box"><h3>Order summary</h3><div class="r"><span class="mut">Subtotal (${cnt()} items)</span><span>${inr(tot())}</span></div><div class="r"><span class="mut">Delivery</span><span>Free</span></div><div class="r tot"><span>Total</span><span>${inr(tot())}</span></div><p class="sm mut">This order goes only to ${s.n}.</p><button class="btn" data-a="place">Place order</button></aside></div></div>`},
+done(){const o=S.last;return`<div class="wrap" style="align-items:center"><div class="card done"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.2 3.2L17 9"/></svg><h2>Order placed</h2><p class="mut">Order #${o.no} has been sent to ${o.s}, ${o.loc}.</p><div class="box" style="width:100%;text-align:left"><div class="r"><span class="mut">Placed</span><b>${o.date}</b></div><div class="r"><span class="mut">Items</span><b>${o.n}</b></div><div class="r"><span class="mut">Total</span><b>${inr(o.t)}</b></div><div class="r"><span class="mut">Status</span><b style="color:var(--ok)">Received by school</b></div></div><button class="btn" data-a="orders">View my orders</button><button class="btn g" data-a="shop">Continue shopping</button></div></div>`},
+orders(){return`<div class="wrap"><h2 style="font-size:32px">My orders</h2>${S.orders.length?S.orders.map(o=>`<div class="box"><div class="r"><b>#${o.no}</b><span class="ok" style="padding:4px 12px;font-size:14px">Received by school</span></div><p class="mut sm">${o.date} · ${o.n} items · ${inr(o.t)} · ${o.s}</p></div>`).join(''):`<div class="box"><p class="mut">No orders yet. Your uniforms and books orders will appear here.</p></div>`}<button class="btn" style="max-width:260px" data-a="shop">Browse the catalog</button></div>`}
+};
+function render(){app.innerHTML=hdr()+V[S.view]();const h=H[S.view];h&&h()}
+function go(v){S.view=v;clearInterval(S.timer);render();scrollTo(0,0)}
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.k);toast.k=setTimeout(()=>t.classList.remove('on'),2200)}
+const H={
+login(){const i=$('#sid');i.addEventListener('keydown',e=>e.key==='Enter'&&A.send())},
+otp(){const bx=[...document.querySelectorAll('#otp input')];bx[0].focus();
+bx.forEach((b,i)=>{b.addEventListener('input',()=>{b.value=b.value.replace(/\D/g,'');if(b.value&&bx[i+1])bx[i+1].focus();if(bx.every(x=>x.value))A.verify()});
+b.addEventListener('keydown',e=>{if(e.key==='Backspace'&&!b.value&&bx[i-1])bx[i-1].focus()});
+b.addEventListener('paste',e=>{const d=(e.clipboardData.getData('text')||'').replace(/\D/g,'').slice(0,6);if(!d)return;e.preventDefault();[...d].forEach((c,k)=>bx[k].value=c);bx[Math.min(d.length,5)].focus();if(d.length===6)A.verify()})});tick(30)},
+cart(){document.querySelectorAll('input[name=d]').forEach(r=>r.onchange=()=>S.del=r.value);document.querySelectorAll('input[name=p]').forEach(r=>r.onchange=()=>S.pay=r.value);const p=$('#ph');if(p)p.oninput=()=>{p.value=p.value.replace(/\D/g,'');S.ph=p.value}}
+};
+function tick(n){const r=$('#rs');if(!r)return;clearInterval(S.timer);const f=()=>{r.innerHTML=n>0?`Resend OTP in 0:${String(n).padStart(2,'0')}`:'<button class="link" data-a="resend">Resend OTP</button>'};f();S.timer=setInterval(()=>{n--;f();if(n<=0)clearInterval(S.timer)},1000)}
+const A={
+home(){go(S.stu?'catalog':'login')},
+demo(b){$('#sid').value=b.dataset.id;$('#sid').focus()},
+send(){const id=($('#sid').value||'').trim().toUpperCase(),u=DB[id];if(!u||!u.on)return go('failed');S.pend=u;go('otp')},
+resend(){toast('A new code has been sent');tick(30)},
+verify(){const v=[...document.querySelectorAll('#otp input')].map(x=>x.value).join('');
+if(v!=='123456'){$('#oerr').innerHTML='<div class="err">That code doesn’t match. Check the 6 digits and try again.</div>';return}
+S.stu=S.pend;S.tab='u';go('catalog')},
+retry(){go('login')},
+tab(b){S.tab=b.dataset.t;render()},
+add(b){const x=items().find(i=>i.id===b.dataset.id),z=x.t==='u'?$('#z-'+x.id).value:'',l=S.cart.find(c=>c.id===x.id&&c.z===z);
+l?l.q++:S.cart.push({id:x.id,n:x.n,i:x.i,col:x.col,p:x.p,z,q:1});render();toast(`Added ${x.n}${z?' (size '+z+')':''} to cart`)},
+cart(){go('cart')},shop(){go('catalog')},orders(){go('orders')},
+inc(b){S.cart[b.dataset.i].q++;render()},
+dec(b){const l=S.cart[b.dataset.i];l.q>1?l.q--:S.cart.splice(b.dataset.i,1);render()},
+rm(b){S.cart.splice(b.dataset.i,1);render()},
+place(){const p=($('#ph').value||'');if(!/^[6-9]\d{9}$/.test(p)){$('#perr').innerHTML='<div class="err">Enter a valid 10-digit mobile number so the school can reach you.</div>';$('#ph').focus();return}
+const s=SCH[S.stu.school],o={no:'APR-26'+Math.floor(1000+Math.random()*9000),s:s.n,loc:s.loc,n:cnt(),t:tot(),date:new Date().toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})};
+S.orders.unshift(o);S.last=o;S.cart=[];go('done')},
+out(){S.stu=S.pend=null;S.cart=[];go('login')}
+};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b)});
+render();
+</script>
+</body>
+</html>
